@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/*Nesse trecho, fazemos a configuração do Grid Layout como forma de exibição da página web 
+(display: grid;), da largura das colunas (grid-template-columns: 70% 30%;), do espaçamento 
+entre as linhas e colunas do grid (grid-gap: 1em;) e para não exibir nenhuma barra de rolagem 
+no eixo X (overflow-x: hidden;)*/
+.wrapper {
+display: grid;
+grid-template-columns: 70% 30%;
+grid-gap: 1em;
+overflow-x: hidden;
+}
+
+/*Nesse trecho, fazemos a configuração da cor de plano de fundo do item do grid (background: 
+#eee;) e do espaçamento do elemento <article> (padding: 1em;)*/
+.wrapper article {
+    background: #eee;
+    padding: 1em;
+}
+
+.wrapper article:nth-child(odd) {
+    background: aquamarine;
+}
+
+.wrapper article:nth-child(even) {
+    background: red;
+}
+
+.wrapper article:nth-child(odd):hover {
+    background: red;
+}
+
+.wrapper article:nth-child(even):hover {
+    background: aquamarine;
+}

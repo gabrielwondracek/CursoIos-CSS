@@ -1,0 +1,89 @@
+@charset "utf-8"; 
+body {  
+    font: normal 15px  "Tahoma", sans-serif;         
+    background: #333;     
+    color: #fff; 
+} 
+ 
+h2 {     
+    text-align: center; 
+} 
+
+/*CAIXAS*/
+.col {     
+    margin: 23px;
+    float: left;  
+    width: 30%;    
+    padding: 8px;     
+    box-sizing: border-box;
+} 
+
+.price-box:hover {
+background-color: #eee;
+border: 1px solid #eee;
+font-weight: bold;
+}     
+
+
+/*CONTEÚDO DAS CAIXAS*/
+.price-box ::selection {
+    background-color: green;
+    color: yellow;
+}
+
+/*CONTEÚDO DAS CAIXAS*/
+.price-box {     
+    background: #fff;     
+    color: #555;     
+    list-style-type: none;     
+    border: 1px solid #555;     
+    margin: 0;     
+    padding: 0; 
+} 
+
+/*CONTEÚDO DAS CAIXAS*/
+.price-box .header {     
+    background-color: #111;     
+    color: #fff;     
+    font-size: 25px; 
+} 
+
+/*CAIXA DO MEIO*/
+.price-box .header.header-green {    
+    background: #4caf50; 
+} 
+
+/*CONTEÚDO DAS CAIXAS*/
+.price-box li {     
+    padding: 20px;     
+    border-bottom: 20px solid #eee;     
+    text-align: center; 
+}
+
+/*CADASTRE-SE*/
+.btn:hover {
+    color: black;
+    font-weight: bold;
+}
+
+ /*CADASTRE-SE*/
+.btn {     
+    background-color: #4caf50;     
+    border: none;     
+    color: #fff;     
+    padding: 10px 15px;     
+    text-align: center;     
+    text-decoration: none;     
+    font-size: 18px; 
+}
+
+/*MUDAR A RESOLUÇÃO DE ACORDO COM OS PIXELS*/
+@media(max-width:768px) {     
+    .col {width: 100%;} 
+}
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,113 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    background: whitesmoke;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+   
+/*Nesse trecho, definimos as propriedades da classe .main-header associada ao elemento 
+<header>, tais como: a altura (height: 55vh), o espaçamento (padding: 2rem), usar o Flexbox 
+para exibir os itens (display: flex), a direção do flexbox em colunas (flex-direction: column), o 
+alinhamento vertical dos itens dentro do flexbox (align-items: center), o alinhamento horizontal 
+dos itens dentro do flexbox (justify-items: center) e o centralizar o texto (text-align: center).*/
+.main-header {
+    height: 55vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}   
+
+.main-header h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.2rem;
+}
+
+    .main-header h1 span {
+    color: #b50d10;
+}
+
+   .main-header p {
+    font-size: 2rem;
+}
+
+/*Nesse trecho, configuramos a classe .container associada ao elemento <main> definindo as 
+seguintes propriedades: largura máxima (max-width: 1100px), margem (margin: auto), 
+overflow (overflow: auto) e o espaçamento superior, inferior, esquerda e direita (padding: 
+0 2rem).*/
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+/*Nesse trecho, configuramos a classe .card associada ao elemento <section> definindo as 
+seguintes propriedades: usar o CSS Grid Layout para exibir os itens (display: grid), a divisão do 
+espaço livre em duas colunas iguais (grid-template-columns: repeat(2, 1fr);), o espaçamento 
+entre os itens (grid-gap: 2rem), a cor de plano de fundo (background: #f1f1f1) e margem 
+inferior (margin-bottom: 2rem).*/
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: #dcdcdc;
+    margin-bottom: 2rem;
+    border: #dcdcdc solid 2px
+}
+
+.card:hover {
+    border: #000 solid 2px;
+}
+
+.card h3 {
+    margin-bottom: 2rem;
+   }
+
+.card img {
+    height: 400px;
+}
+
+.card div {
+    padding: 2rem;
+}
+
+.card:nth-child(even) img {
+    order: 2;
+}
+
+.btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+   .btn:hover {
+    opacity: 0.8;
+    background-color: green;
+}
+   
+   
+   
+   
